@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos Generales */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ffffff;
+}
+
+.btn,
+a {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+/* NavBar */
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  top: 0;
+  z-index: 10;
+  background-color: #a5c8d8;
+}
+
+.navbar-izq {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar-izq .menu ul {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navbar-izq .menu ul li {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-izq .menu ul li:hover {
+  background-color: #eee;
+}
+
+.navbar-der {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navbar-der .btn {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-der .btn:first-child:hover::after {
+  content: '';
+  animation: borderTransition 0.3s normal forwards;
+}
+
+.navbar-der .btn:last-child {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background-color: #1f1738;
+}
+
+.navbar-der .btn:last-child:hover {
+  animation: backgroundTransition 1s normal forwards;
+}
+
+/* Animaciones */
+@keyframes backgroundTransition {
+  0% {
+    background: #1f1738;
+  }
+  100% {
+    color: #000000;
+    background: #eee;
+  }
+}
+
+@keyframes borderTransition {
+  0% {
+    height: 2px;
+    width: 0%;
+  }
+  100% {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+  }
+}
