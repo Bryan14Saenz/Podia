@@ -1,38 +1,109 @@
 <!DOCTYPE html>
 <!-- Etiqueta de Idioma -->
 <html lang="es">
-  <head>
-    <!-- Metadatos -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Styles -->
-    <link rel="stylesheet" href="Css/style.css" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="" type="image/x-icon" />
-    <!-- Título -->
-    <title>Frontend Practice - Podia</title>
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="navbar-izq">
-        <div class="logo">
-          <h1>Podia</h1>
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="Css/style.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="" type="image/x-icon" />
+  <!-- Título -->
+  <title>Frontend Practice - Podia</title>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar">
+    <div class="navbar-izq">
+      <div class="logo">
+        <h1>Podia</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Sitio Web</a></li>
+          <li><a href="#">Correo Electrónico</a></li>
+          <li><a href="#">Tienda En Linea ▼</a></li>
+          <li><a href="#">Cambiar A Podia</a></li>
+          <li><a href="#">Precios</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-der">
+      <button class="btn">Acceso</button>
+      <button class="btn">Registrarse Gratis</button>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="text">
+      <h2>Una Tienda Online Que Facilita La Venta</h2>
+      <p>
+        Vende cualquier cosa desde tu tienda Podia. Sube tu contenido y
+        déjanos el alojamiento, el pago y el envío.
+      </p>
+      <button class="btn">Consigue Tu Tienda Online Gratis</button>
+    </div>
+    <div class="img">
+      <img src="Img/widged.png" alt="wedged de acciones">
+    </div>
+  </header>
+  <!-- Main -->
+  <section class="main">
+    <div class="primerContenedor">
+      <h2>Vende todo lo que puedas imaginar</h2>
+      <p>
+        Podia te da la flexibilidad de vender cualquier producto digital que desees. Podia lo aloja todo y gestiona
+        aspectos
+        como la gestión de acceso para garantizar que solo los clientes que pagan puedan obtener tus productos.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeJJREFUSEvV1EuITnEYBvDfKJZyLZeyk8WsTEpiobAYC9cME7JRFGU2srCxkIUUNQsLNjNJyN0CpTSZnbKlWEii3FIal1xyXr2fjvEd830z8y28dTr1f//nec7/eZ7336bF1dZifP8NwWSsxTZ8x+qaMmM5wTRsyGclJiboe0wdLcGcBFyP5ZiQQD/wDjNwFlubIZiHTQm8hN++fcRtXMUN3CyexdiIyyMRzEdXgnaUkvY2wQI0wD9nbxZe4hOm5/tXq+zBAmzHOrSXQJ/lX17DQJo4PN37cAIXsLncLBO8Tg2j/w1HcQkPGpiVe1iWUl6sIthTNA6VSJ7gCPoQJlbVbLxIucLkoSqCWJ+EHcWm/Qgfoh7jMM5UEO0tdO9NY8PgP6pqDmJ9SxItzC+eIrS+Pgzjbka2G+caJSjvW1Gk4gBWpTdz8So3xLC9wdfC5Cnl9IwU03p6X8mEhS8Hc8NunEQkLNL3VzVzVSzC/ZzYmOgvRXLuIE4Y8Q6PxkQQHw9iaTFUuxBxDKnicov0fBgPgjUpxyMcw+mc7FivW81IFACx/yFi6uNqiBmIWPePF0Hg7MSpBAx54mquK0/tj6rIq9ZjGJ9jJm6h818AzUpUw+rB8RzG860gaPjUoz1BwwQ/Aa1JVxmwQG50AAAAAElFTkSuQmCC"
+            alt="cursor" />
+          <h3>Hermoso curso en linea que puedes crear en minutos. ▶</h3>
+          <p>
+            Añade videos, archivos, lecciones y organiza tu curso como quieras. Podia alojar tu contenido y gestiona
+            los pagos de tus clientes.
+          </p>
         </div>
-        <div class="menu">
-          <ul>
-            <li><a href="#">Sitio Web</a></li>
-            <li><a href="#">Correo Electrónico</a></li>
-            <li><a href="#">Tienda En Linea ▼</a></li>
-            <li><a href="#">Cambiar A Podia</a></li>
-            <li><a href="#">Precios</a></li>
-          </ul>
+        <div class="card">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALdJREFUSEvVlVEKwjAMhr/dRRjodTzKfBNEEXzQo+w6DjyNElDoSunfLVZcH9vk/5I0JA2VT1NZnxRgC5yBVsAPwEkFmALcgbVyfL/vgFvONgV4FogfAcvAThYyF2B+V6BTEA/AtCXEC5CQbwBiyEhzLqC4cf4O8Ako18quEi0ToAZiXK7JJaoOCFtymX/w0wwKJvl4iXkXTgwcgE0q5fDOVuYFWJWEG9g8gD3QK8BE3by56nE37AXnUioZ/QYLBAAAAABJRU5ErkJggg=="
+            alt="archivo" />
+          <h3>Libro electrónicos, plantillas y cualquier tipo de archivo que puedas imaginarte. ▶</h3>
+          <p>
+            Tienes una ebook para vender? Te encantan las plantillas? Podia podría facilitarte crear una pagina de
+            venta y vender ebook, plantillas y archivos de audio, archivos de video, hojas de calculo y cualquier otro
+            tipo de archivo.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO5JREFUSEvt1TFOAkEUxvEf5yAhUQvlKFZacQwqQ0K8gBb0noSSG9gYEysIJLZcwIRAljBkXd3RWWetmHbmff/3vpn3pqPl1WlZXwxwgwdcJSbxhjtMi7gY4B3dRPFwfIGLnwCp2n1McH0I3Cef+w7OMa8DZPEc2zpAFs9jgEBO9T6cD3bXVnAC/KtFS5xV+yDXHbxi9N2oyAX49ArLndw6YIVewyY4el6NL1dQjIpHXCZCXjAOnscA1b2yZRvcHxJI4semaQCsMcAsSbk88WoCC8AzblEMwkYrVsEThvhopPyLCv6ie4zN/aN9SWoHbfguGSkx7KMAAAAASUVORK5CYII="
+            alt="mensaje" />
+          <h3>Coaching y consultas individuales, vendidas y programadas desde su sitio. ▶</h3>
+          <p>
+            Vende acceso personalizado a tu tiempo de atención. Podia te facilita el cobro de sesiones de coaching y
+            consultas
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANVJREFUSEu11j9qAkEUB+DP24kXMIiNpLO2SG0g9jaeIG0OELSxDzlAIJhCSCkWIohoBnbBIsv+cd/AVgu/b5l5+950BK9OcL4i4AcbjPB9z0cUAZcs9IAJFk2RMiDPXWGI37pQVSDl7vCItzpIHSDPfcUY+ypQEyDlbjHAugxpCqTcVAhzPP09xyLoHiDP/EIfn/8hbQAp94QpZjjfQm0BeeYS3VukbeAdvQggbdEzXiK2KOyQQ8s09EcLaxWhzS6sXYcNnI+snh+iRmZZF678PvxWcQWoeUAZZIKJWAAAAABJRU5ErkJggg=="
+            alt="play" />
+          <h3>Webinars y talleres con inscripción y pago en un lugar. ▶</h3>
+          <p>
+            Organiza seminario web directamente desde tu sitio web. Crea un seminario web de pago y tus clientes podrán
+            registrarse directamente desde tu tienda Podia.
+          </p>
         </div>
       </div>
-      <div class="navbar-der">
-        <button class="btn">Acceso</button>
-        <button class="btn">Registrarse Gratis</button>
-      </div>
-    </nav>
-  </body>
+    </div>
+  </section>
+</body>
+
 </html>
