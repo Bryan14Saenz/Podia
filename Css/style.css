@@ -23,11 +23,12 @@ a {
 
 /* NavBar */
 .navbar {
-  position: sticky;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  width: 100%;
   top: 0;
   z-index: 10;
   background-color: #a5c8d8;
@@ -82,10 +83,12 @@ a {
 
 /* Header */
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 3rem 20rem 3rem;
+  z-index: 5;
   background-color: #a5c8d8;
   color: #1f1738;
 }
@@ -137,6 +140,8 @@ a {
 
 /* Main */
 .main {
+  position: relative;
+  z-index: 5;
   height: 100vh;
   border-top-left-radius: 95%;
   border-top-right-radius: 95%;
@@ -144,13 +149,16 @@ a {
   background-color: #fff;
 }
 
+/* Main Primer Contenedor */
 .main .primerContenedor {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
   margin: 0 auto;
   padding: 160px 20px;
+  z-index: 5;
 }
 
 .main .primerContenedor h2 {
@@ -192,13 +200,15 @@ a {
 
 .main .cards .card h3 {
   text-align: left;
+  line-height: 1.5rem;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
 .main .cards .card p {
-  width: 100%;
   text-align: left;
+  line-height: 1.5rem;
+  width: 100%;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -207,6 +217,123 @@ a {
   content: '';
   cursor: pointer;
   animation: borderTransition 0.3s normal forwards;
+}
+
+/* Segundo Contenedor */
+.main .segundoContenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 120px 20px;
+}
+
+.main .segundoContenedor h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.main .segundoContenedor p {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.main .segundoContenedor .img {
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+  border-radius: 1rem;
+  margin: 50px 0;
+}
+
+.main .segundoContenedor .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .segundoContenedor .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.main .segundoContenedor .cards .card {
+  background-color: transparent;
+}
+
+.main .segundoContenedor .cards .card h3 {
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+.main .segundoContenedor .cards .card p {
+  font-size: 1.2rem;
+}
+
+.main .segundoContenedor .cards .card:hover h3::after {
+  animation: none;
+}
+
+/* Tercer Contenedor */
+.main .tercerContenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  transform: translate(0, -200px);
+  background-color: #a5c8d899;
+}
+
+.main .tercerContenedor .img {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.main .tercerContenedor .img img {
+  object-fit: cover;
+}
+
+.main .tercerContenedor .contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  padding: 160px 20px;
+}
+
+.main .tercerContenedor .contenedor h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.main .tercerContenedor .contenedor p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.main .tercerContenedor .contenedor .btn {
+  cursor: pointer;
+  border: none;
+  width: 60%;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background-color: #1f1738;
+}
+
+.main .tercerContenedor .contenedor .btn:hover {
+  animation: backgroundTransition 0.3s normal forwards;
 }
 
 /* Animaciones */
